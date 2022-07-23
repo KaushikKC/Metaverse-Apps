@@ -14,7 +14,8 @@
     "next": "12.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-moralis": "^1.4.0"
+    "react-moralis": "^1.4.0",
+    "timeago-react": "^3.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
