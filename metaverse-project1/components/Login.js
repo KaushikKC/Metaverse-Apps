@@ -9,7 +9,6 @@ function Login() {
 
   return (
     <div className='bg-black relative'>
-      <h1>I am the login screen</h1>
 
       <div className='z-50 flex flex-col absolute items-center justify-center 
       h-4/6 w-full space-y-4'>
@@ -26,8 +25,16 @@ function Login() {
         </button>
 
       </div>
-      <div className='w-full h-screen'>
-        <Image src="https://links.papareact.com/55n" layout='fill' objectFit='cover' />
+
+      <div className='absloute w-full h-screen bg-black-500 z-60'>
+        
+        <video className='absloute t-0 l-0 w-full h-screen object-cover'
+        src="https://assets.mixkit.co/videos/preview/mixkit-neon-lights-lines-on-abstract-stage-loop-video-30599-large.mp4"
+          autoPlay
+          loop
+          muted
+           />
+           <div className="overlay"></div>
       </div>
     </div>
 
