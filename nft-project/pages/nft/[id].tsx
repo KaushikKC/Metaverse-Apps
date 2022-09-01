@@ -4,6 +4,7 @@ import { GetServerSideProps } from 'next';
 import { sanityClient, urlFor } from '../../sanity';
 import Link from 'next/link';
 import {BigNumber} from 'ethers'
+import { Collection } from '../../typing';
 
 interface Props {
     collection: Collection
@@ -15,6 +16,8 @@ function NFTDropPage({ collection }: Props)  {
   const [claimedSupply, setClaimedSupply] = useState<number>(0)
   const [totalSupply, setTotalSupply] = useState<BigNumber>()
   const NFTDrop = useNFTDrop(collection.address);
+
+  console.log(totalSupply)
 
     // Auth
     const connectWithMetamask = useMetamask();
